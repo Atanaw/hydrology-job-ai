@@ -1,0 +1,289 @@
+# type: rss, public_search, apify, manual_url
+# enabled: true/false
+# Direct scraping must respect site terms and robots.txt. Prefer RSS/API/Apify where possible.
+sources:
+  - name: Jobs.ac.uk Environmental Sciences
+    type: rss
+    enabled: true
+    url: https://www.jobs.ac.uk/jobs/rss/environmental-sciences
+    employer_type: university
+  - name: Jobs.ac.uk Engineering
+    type: rss
+    enabled: true
+    url: https://www.jobs.ac.uk/jobs/rss/engineering-and-technology
+    employer_type: university
+  - name: FindAPostDoc
+    type: rss
+    enabled: true
+    url: https://www.findapostdoc.com/rss/jobs.aspx
+    employer_type: university
+  - name: GOV Find a Job Hydrologist
+    type: public_search
+    enabled: true
+    url: https://findajob.dwp.gov.uk/search?q=hydrologist&w=UK
+    employer_type: public
+  - name: GOV Find a Job Flood Risk
+    type: public_search
+    enabled: true
+    url: https://findajob.dwp.gov.uk/search?q=flood%20risk&w=UK
+    employer_type: public
+  - name: Environment Agency Careers
+    type: manual_url
+    enabled: true
+    url: https://environmentagencyjobs.tal.net/vx/lang-en-GB/mobile-0/appcentre-1/brand-2/candidate/jobboard/vacancy/1/adv/
+    employer_type: public
+  - name: UKRI Jobs
+    type: manual_url
+    enabled: true
+    url: https://www.ukri.org/about-us/work-for-us/
+    employer_type: public
+  - name: NERC Jobs
+    type: manual_url
+    enabled: true
+    url: https://www.ukri.org/councils/nerc/
+    employer_type: public
+  - name: UNESCO Careers
+    type: manual_url
+    enabled: true
+    url: https://careers.unesco.org/
+    employer_type: international
+  - name: UN Jobs Water
+    type: manual_url
+    enabled: true
+    url: https://unjobs.org/themes/water
+    employer_type: international
+  - name: LinkedIn Jobs via Apify
+    type: apify
+    enabled: false
+    actor: apify/linkedin-jobs-scraper
+    employer_type: mixed
+  - name: Indeed UK via Apify
+    type: apify
+    enabled: false
+    actor: misceres/indeed-scraper
+    employer_type: mixed
+  - name: Reed UK via Apify
+    type: apify
+    enabled: false
+    actor: canadesk/reed-co-uk-scraper
+    employer_type: mixed
+  - name: Totaljobs via Apify
+    type: apify
+    enabled: false
+    actor: bebity/totaljobs-scraper
+    employer_type: mixed
+  - name: CV Library via Apify
+    type: apify
+    enabled: false
+    actor: apify/cv-library-scraper
+    employer_type: mixed
+  - name: Monster UK via Apify
+    type: apify
+    enabled: false
+    actor: apify/monster-jobs-scraper
+    employer_type: mixed
+  - name: AtkinsRéalis Careers
+    type: manual_url
+    enabled: true
+    url: https://careers.atkinsrealis.com/
+    employer_type: consultancy
+  - name: Jacobs Careers
+    type: manual_url
+    enabled: true
+    url: https://careers.jacobs.com/
+    employer_type: consultancy
+  - name: AECOM Careers
+    type: manual_url
+    enabled: true
+    url: https://aecom.jobs/
+    employer_type: consultancy
+  - name: Arup Careers
+    type: manual_url
+    enabled: true
+    url: https://www.arup.com/careers/
+    employer_type: consultancy
+  - name: JBA Consulting Careers
+    type: manual_url
+    enabled: true
+    url: https://jbaconsulting.current-vacancies.com/Jobs/
+    employer_type: consultancy
+  - name: HR Wallingford Careers
+    type: manual_url
+    enabled: true
+    url: https://www.hrwallingford.com/careers
+    employer_type: consultancy
+  - name: Mott MacDonald Careers
+    type: manual_url
+    enabled: true
+    url: https://www.mottmac.com/careers
+    employer_type: consultancy
+  - name: WSP Careers
+    type: manual_url
+    enabled: true
+    url: https://www.wsp.com/en-gb/careers
+    employer_type: consultancy
+  - name: Ramboll Careers
+    type: manual_url
+    enabled: true
+    url: https://www.ramboll.com/careers
+    employer_type: consultancy
+  - name: Stantec Careers UK
+    type: manual_url
+    enabled: true
+    url: https://www.stantec.com/uk/careers
+    employer_type: consultancy
+  - name: RPS Careers
+    type: manual_url
+    enabled: true
+    url: https://www.rpsgroup.com/careers/
+    employer_type: consultancy
+  - name: Binnies Careers
+    type: manual_url
+    enabled: true
+    url: https://binnies.com/careers/
+    employer_type: consultancy
+  - name: Royal HaskoningDHV Careers
+    type: manual_url
+    enabled: true
+    url: https://www.royalhaskoningdhv.com/en/careers
+    employer_type: consultancy
+  - name: Tetra Tech Careers UK
+    type: manual_url
+    enabled: true
+    url: https://www.tetratecheurope.com/careers/
+    employer_type: consultancy
+  - name: Sweco Careers UK
+    type: manual_url
+    enabled: true
+    url: https://www.sweco.co.uk/careers/
+    employer_type: consultancy
+  - name: Thames Water Careers
+    type: manual_url
+    enabled: true
+    url: https://careers.thameswater.co.uk/
+    employer_type: water_company
+  - name: Severn Trent Careers
+    type: manual_url
+    enabled: true
+    url: https://careers.severntrent.com/
+    employer_type: water_company
+  - name: Wessex Water Careers
+    type: manual_url
+    enabled: true
+    url: https://www.wessexwater.co.uk/careers
+    employer_type: water_company
+  - name: Portsmouth Water Careers
+    type: manual_url
+    enabled: true
+    url: https://www.portsmouthwater.co.uk/careers/
+    employer_type: water_company
+  - name: South West Water Careers
+    type: manual_url
+    enabled: true
+    url: https://www.southwestwater.co.uk/about-us/careers
+    employer_type: water_company
+  - name: Anglian Water Careers
+    type: manual_url
+    enabled: true
+    url: https://www.anglianwatercareers.co.uk/
+    employer_type: water_company
+  - name: Yorkshire Water Careers
+    type: manual_url
+    enabled: true
+    url: https://www.yorkshirewater.com/careers/
+    employer_type: water_company
+  - name: United Utilities Careers
+    type: manual_url
+    enabled: true
+    url: https://www.unitedutilities.com/corporate/careers/
+    employer_type: water_company
+  - name: Northumbrian Water Careers
+    type: manual_url
+    enabled: true
+    url: https://www.nwg.co.uk/careers/
+    employer_type: water_company
+  - name: Scottish Water Careers
+    type: manual_url
+    enabled: true
+    url: https://careers.scottishwater.co.uk/
+    employer_type: water_company
+  - name: Southern Water Careers
+    type: manual_url
+    enabled: true
+    url: https://www.southernwater.co.uk/careers/
+    employer_type: water_company
+  - name: Affinity Water Careers
+    type: manual_url
+    enabled: true
+    url: https://www.affinitywater.co.uk/careers
+    employer_type: water_company
+  - name: South East Water Careers
+    type: manual_url
+    enabled: true
+    url: https://careers.southeastwater.co.uk/
+    employer_type: water_company
+  - name: SES Water Careers
+    type: manual_url
+    enabled: true
+    url: https://seswater.co.uk/careers/
+    employer_type: water_company
+  - name: Cambridge Water Careers
+    type: manual_url
+    enabled: true
+    url: https://www.cambridge-water.co.uk/careers
+    employer_type: water_company
+  - name: Bristol Water Careers
+    type: manual_url
+    enabled: true
+    url: https://www.bristolwater.co.uk/careers
+    employer_type: water_company
+  - name: Exeter University Jobs
+    type: manual_url
+    enabled: true
+    url: https://jobs.exeter.ac.uk/
+    employer_type: university
+  - name: Bristol University Jobs
+    type: manual_url
+    enabled: true
+    url: https://www.bristol.ac.uk/jobs/
+    employer_type: university
+  - name: Oxford University Jobs
+    type: manual_url
+    enabled: true
+    url: https://www.jobs.ox.ac.uk/
+    employer_type: university
+  - name: Cambridge University Jobs
+    type: manual_url
+    enabled: true
+    url: https://www.jobs.cam.ac.uk/
+    employer_type: university
+  - name: Imperial College Jobs
+    type: manual_url
+    enabled: true
+    url: https://www.imperial.ac.uk/jobs/
+    employer_type: university
+  - name: Southampton University Jobs
+    type: manual_url
+    enabled: true
+    url: https://jobs.soton.ac.uk/
+    employer_type: university
+  - name: Reading University Jobs
+    type: manual_url
+    enabled: true
+    url: https://jobs.reading.ac.uk/
+    employer_type: university
+  - name: Leeds University Jobs
+    type: manual_url
+    enabled: true
+    url: https://jobs.leeds.ac.uk/
+    employer_type: university
+  - name: Manchester University Jobs
+    type: manual_url
+    enabled: true
+    url: https://www.jobs.manchester.ac.uk/
+    employer_type: university
+  - name: Cardiff University Jobs
+    type: manual_url
+    enabled: true
+    url: https://www.cardiff.ac.uk/jobs
+    employer_type: university

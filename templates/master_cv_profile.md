@@ -1,0 +1,1 @@
+Hydrologist and Water Resources Researcher with a PhD in Hydrology and Water Resources Management and over seven years of experience in hydrological modelling, flood and drought assessment, catchment management, climate change impacts, GIS, remote sensing, and environmental data analysis.

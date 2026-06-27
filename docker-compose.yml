@@ -1,0 +1,7 @@
+services:
+  hydrology-job-ai:
+    build: .
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+    command: python main.py

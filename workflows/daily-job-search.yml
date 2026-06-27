@@ -1,0 +1,43 @@
+name: Daily Hydrology Job Search
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  hydrology-job-search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run daily hydrology job automation
+        env:
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          mkdir -p data
+          python main.py

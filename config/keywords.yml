@@ -1,0 +1,94 @@
+include_keywords:
+  primary:
+    - hydrologist
+    - hydrology
+    - flood risk
+    - water resources
+    - catchment
+    - catchment management
+    - drought
+    - hydraulic modeller
+    - hydrological modeller
+    - environmental modeller
+    - water quality
+    - groundwater
+    - surface water
+    - climate resilience
+    - climate adaptation
+    - nature-based solutions
+    - natural flood management
+    - NFM
+    - SuDS
+    - river modelling
+    - rainfall runoff
+    - HEC-RAS
+    - HEC-HMS
+    - SWAT
+    - SWAT+
+    - GIS
+    - remote sensing
+    - drainage
+    - flood modelling
+    - postdoctoral hydrology
+    - research associate hydrology
+  secondary:
+    - environmental consultant
+    - sustainability
+    - climate change
+    - water engineer
+    - wastewater
+    - environmental science
+    - river restoration
+    - environmental monitoring
+    - source protection
+    - diffuse pollution
+    - nutrient management
+exclude_terms:
+  - sales executive
+  - call centre
+  - professor
+  - director
+  - chief executive
+  - recruitment consultant
+  - insurance
+  - finance analyst
+seniority_terms:
+  junior:
+    - graduate
+    - assistant
+    - junior
+    - trainee
+  mid:
+    - consultant
+    - officer
+    - analyst
+    - modeller
+    - scientist
+    - researcher
+  senior:
+    - senior
+    - lead
+    - principal
+    - manager
+    - head of
+location_preferences:
+  high:
+    - United Kingdom
+    - UK
+    - England
+    - Remote
+    - Hybrid
+    - Swindon
+    - Bristol
+    - Reading
+    - Oxford
+    - Exeter
+    - London
+    - Cardiff
+    - Birmingham
+    - Manchester
+    - Leeds
+  medium:
+    - Scotland
+    - Wales
+    - Northern Ireland
